@@ -6,7 +6,7 @@ public class Day9Car {
     public String color;
 
     public void horn() {
-        System.out.println("빵빵");
+        System.out.println(name + "빵빵");
     }
     public void jajun(){
         System.out.println("재준이 바보");

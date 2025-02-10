@@ -9,5 +9,18 @@ public class Day9Practice {
         System.out.println("자동차 이름 = " + car1.name);
         System.out.println("자동차 종 = " + car1.species);
         System.out.println("자동차 색깔 = " + car1.color);
+        car1.jajun();
+        car1.horn();
+
+
+        Day9Car car2 = new Day9Car();
+        car2.name = "기아";
+        car2.species = "승용차";
+        car2.color = "흰색";
+        System.out.println("자동차 이름 = " + car2.name);
+        System.out.println("자동차 종 = " + car2.species);
+        System.out.println("자동차 색깔 = " + car2.color);
+        car2.jajun();
+        car2.horn();
     }
 }
