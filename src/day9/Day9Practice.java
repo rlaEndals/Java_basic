@@ -1,0 +1,13 @@
+package day9;
+
+public class Day9Practice {
+    public static void main(String[] args) {
+        Day9Car car1 = new Day9Car();
+        car1.name = "벤츠";
+        car1.species = "승용차";
+        car1.color = "빨간색";
+        System.out.println("자동차 이름 = " + car1.name);
+        System.out.println("자동차 종 = " + car1.species);
+        System.out.println("자동차 색깔 = " + car1.color);
+    }
+}
