@@ -32,5 +32,14 @@ public class Day9Practice {
         System.out.println("자동차 색깔 = " + car3.color);
         car3.jajun();
         car3.horn();
+
+        Day9Car carOnlyName = new Day9Car("진동휘");
+        carOnlyName.species = "잼민이";
+        carOnlyName.color = "살구색";
+
+        Day9Car carNameAndSpecies = new Day9Car("진동휘","잼민이");
+        carNameAndSpecies.color = "살구색";
+
+        Day9Car carPerfect = new Day9Car("진동휘", "잼민이", "살구색");
     }
 }
