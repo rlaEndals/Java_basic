@@ -30,7 +30,7 @@ public class Day10Practice {
         }
         //
         for (Day10Student student : students) {
-            System.out.println(student.introduce());
+            System.out.println(student.introduce("남자"));
         }
     }
 }

@@ -9,7 +9,7 @@ public class Day10Student {
         this.age = age;
     }
 
-    public String introduce() {
-        return "안녕하세요. 저는 " + age + "살 " + name + "입니다.";
+    public String introduce(String gender) {
+        return "안녕하세요. 저는 " + age + "살 " + gender + " " + name + "입니다.";
     }
 }
