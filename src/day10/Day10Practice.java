@@ -31,6 +31,7 @@ public class Day10Practice {
         //
         for (Day10Student student : students) {
             System.out.println(student.introduce());
+            //구진우 바부
         }
     }
 }
