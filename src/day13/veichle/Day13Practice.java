@@ -2,12 +2,12 @@ package day13.veichle;
 
 public class Day13Practice {
     public static void main(String[] args) {
-        Car car = new Car(50, 10);
+        Day13Car car = new Day13Car(50, 10);
         car.move();
         car.refuel(10);
 
-        Bicycle bicycle = new Bicycle(20, "흰색");
-        bicycle.move();
-        bicycle.pedal();
+        Day13Bicycle day13Bicycle = new Day13Bicycle(20, "흰색");
+        day13Bicycle.move();
+        day13Bicycle.pedal();
     }
 }

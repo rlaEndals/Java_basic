@@ -1,9 +1,9 @@
 package day13.veichle;
 
-public class Vehicle {
+public class Day13Vehicle {
     protected int speed;
 
-    public Vehicle(int speed) {
+    public Day13Vehicle(int speed) {
         this.speed = speed;
     }
 

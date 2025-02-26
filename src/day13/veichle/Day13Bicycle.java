@@ -1,10 +1,10 @@
 package day13.veichle;
 
-public class Bicycle extends Vehicle {
+public class Day13Bicycle extends Day13Vehicle {
 
     private String color;
 
-    public Bicycle(int speed, String color) {
+    public Day13Bicycle(int speed, String color) {
         super(speed);
         this.color = color;
     }

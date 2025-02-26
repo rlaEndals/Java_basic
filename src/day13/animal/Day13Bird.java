@@ -1,10 +1,10 @@
 package day13.animal;
 
-public class Bird extends Animal {
+public class Day13Bird extends Day13Animal {
 
     private int wingSize;
 
-    public Bird(String name, String color, String gender, int wingSize) {
+    public Day13Bird(String name, String color, String gender, int wingSize) {
         super(name, color, gender);
         this.wingSize = wingSize;
     }

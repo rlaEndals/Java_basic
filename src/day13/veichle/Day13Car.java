@@ -1,10 +1,10 @@
 package day13.veichle;
 
-public class Car extends Vehicle {
+public class Day13Car extends Day13Vehicle {
 
     int fuel;
 
-    public Car(int speed, int fuel) {
+    public Day13Car(int speed, int fuel) {
         super(speed);
         this.fuel = fuel;
     }

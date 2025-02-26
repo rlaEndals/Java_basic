@@ -1,11 +1,11 @@
 package day13.animal;
 
-public class Animal {
+public class Day13Animal {
     private String name;
     protected String color;
     protected String gender;
 
-    public Animal(String name, String color, String gender) {
+    public Day13Animal(String name, String color, String gender) {
         this.name = name;
         this.color = color;
         this.gender = gender;
