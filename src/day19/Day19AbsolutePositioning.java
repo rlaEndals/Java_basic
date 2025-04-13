@@ -19,5 +19,6 @@ public class Day19AbsolutePositioning {
         frame.add(button2);
 
         frame.setVisible(true);
+        // lk
     }
 }
