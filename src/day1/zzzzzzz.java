@@ -74,5 +74,6 @@ public class zzzzzzz {
         System.out.println("E. 뚱민이 땀 흘릴 때 발생하는 열기로 작은 국가 하나 난방 가능.");
         System.out.println("F. 뚱민이 발걸음에 의한 충격파로 공룡 멸종설 제기 중.");
         System.out.println("G. NASA, 소행성 충돌 대비책으로 뚱민이 몸무게 사용 예정.");
+        System.out.println("뚱민아 스캐너 만들기 귀찮으니까 카톡으로 정답 보내. 맞추면 스킨 ㅎㅎ");
     }
 }
