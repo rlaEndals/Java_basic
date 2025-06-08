@@ -1,10 +1,14 @@
-package Project;
+package project;
+
+import project.util.PrintUtil;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        PrintUtil printUtil = new PrintUtil();
 
         Hospital[] hospitals = new Hospital[3];
 
@@ -19,7 +23,20 @@ public class Main {
             select = sc.nextInt();
 
             if (select == 1) {
-                
+                User user = new User();
+
+                System.out.print("이름을 입력하세요: ");
+                user.setName(sc.next());
+
+                System.out.print("생년월일을 입력하세요: ");
+                user.setBirthday(sc.next());
+
+                System.out.print("혈액형을 입력하세요: ");
+                user.setBloodType(sc.next());
+
+                printUtil.disease();
+                String disease = sc.next();
+
             } else if (select == 2) {
                 
             } else if (select == 3) {

@@ -1,4 +1,4 @@
-package Project;
+package project;
 
 public class Hospital {
     private String name;
@@ -9,7 +9,7 @@ public class Hospital {
         this.location = location;
     }
 
-    public int calculate(int age, String department) {
+    public int calculatePrice(int age, String department) {
         int t = 0;
 
         if (age<=19 || age >=70){

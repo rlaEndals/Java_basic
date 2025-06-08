@@ -1,9 +1,12 @@
-package Project;
+package project;
 
 public class User {
     private String name;
     private String birthday;
     private String bloodType;
+
+    public User() {
+    }
 
     public User(String name, String birthday, String bloodType) {
         this.name = name;
@@ -29,5 +32,17 @@ public class User {
         int year = Integer.parseInt(parts[0]);
 
         return 2025-year+1;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
+
+    public void setBloodType(String bloodType) {
+        this.bloodType = bloodType;
     }
 }
