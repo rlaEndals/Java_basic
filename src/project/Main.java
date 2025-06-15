@@ -14,7 +14,7 @@ public class Main {
 
         hospitals[0] = new Hospital("가톨릭 병원", "서울");
         hospitals[1] = new Hospital("coma 병원", "수원");
-        hospitals[2] = new Hospital("조무사 병원", "부천");
+        hospitals[2] = new Hospital("조무사 병원", "안산");
 
         int select = 0;
         while (true) {
@@ -23,7 +23,12 @@ public class Main {
             select = sc.nextInt();
 
             if (select == 1) {
+                Reservation reservation = new Reservation();
                 User user = new User();
+
+                printUtil.hospital();
+
+                int hos = sc.nextInt();
 
                 System.out.print("이름을 입력하세요: ");
                 user.setName(sc.next());
@@ -34,8 +39,45 @@ public class Main {
                 System.out.print("혈액형을 입력하세요: ");
                 user.setBloodType(sc.next());
 
+                reservation.setUser(user);
+
                 printUtil.disease();
                 String disease = sc.next();
+
+                reservation.setDisease(disease);
+
+                switch (disease) {
+                    case "골절", "골다공증", "관절질환":
+                        reservation.setDepartment("정형외과");
+                        break;
+                    case "감기", "천식", "당뇨":
+                        reservation.setDepartment("내과    ");
+                        break;
+                    case "아토피", "백반증", "습진":
+                        reservation.setDepartment("피부과  ");
+                        break;
+                }
+
+                int price = hospitals[hos - 1].calculatePrice(user.getAge(), reservation.getDepartment());
+                reservation.setPrice(price);
+
+                System.out.print("1. 지금 결제하시겠습니까?\n2. 나중에 결제하시겠습니까?\n>>> ");
+                int payed = sc.nextInt();
+
+                reservation.setPayed(payed == 1 ? true : false);
+                System.out.println("!!!예약되었습니다!!!");
+
+                switch (hos) {
+                    case 1:
+                        printUtil.catholic(reservation);
+                        break;
+                    case 2:
+                        printUtil.coma(reservation);
+                        break;
+                    case 3:
+                        printUtil.jomusa(reservation);
+                        break;
+                }
 
             } else if (select == 2) {
                 

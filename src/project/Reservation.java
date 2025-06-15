@@ -7,6 +7,8 @@ public class Reservation {
     private int price;
     private boolean isPayed;
 
+    public Reservation() {
+    }
 
     public Reservation(User user, String department, String disease, int price, boolean isPayed) {
         this.user = user;
@@ -39,5 +41,25 @@ public class Reservation {
     }
     public String getIsPayedString() {
         return isPayed ? "완료" : "미완";
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setDisease(String disease) {
+        this.disease = disease;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setPayed(boolean payed) {
+        isPayed = payed;
     }
 }

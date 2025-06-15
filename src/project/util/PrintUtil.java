@@ -53,4 +53,8 @@ public class PrintUtil {
                 ">>> 병명을 입력하세요: ");
     }
 
+    public void hospital() {
+        System.out.print("[병원 선택]\n" +
+                "1. 가톨릭 병원(서울)\n2. coma 병원(수원)\n3. 조무사 병원(안산)\n>>> ");
+    }
 }
