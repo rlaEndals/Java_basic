@@ -11,8 +11,8 @@ public class Hospital {
 
     public int calculatePrice(int age, String department) {
         int t = 0;
-
-        if (age<=19 || age >=70){
+        department = department.trim();
+        if (age <= 19 || age >= 70) {
             t = 2000;
         } else {
             t = 5000;
