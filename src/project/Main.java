@@ -2,6 +2,7 @@ package project;
 
 import project.util.PrintUtil;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -65,6 +66,7 @@ public class Main {
                 int payed = sc.nextInt();
 
                 reservation.setPayed(payed == 1 ? true : false);
+                hospitals[hos - 1].addReservation(reservation);
                 System.out.println("!!!예약되었습니다!!!");
 
                 switch (hos) {
@@ -80,7 +82,30 @@ public class Main {
                 }
 
             } else if (select == 2) {
-                
+                System.out.print("이름을 입력하세요: ");
+                String name = sc.next();
+
+                System.out.print("생년월일을 입력하세요: ");
+                String birthday = sc.next();
+                for (int i = 0; i < 3; i++) {
+                    List<Reservation> reservations =  hospitals[i].getReservations();
+                    for (Reservation reservation : reservations) {
+                        if (reservation.getUser().getName().equals(name) && reservation.getUser().getBirthday().equals(birthday)){
+                            switch (i+1) {
+                                case 1:
+                                    printUtil.catholic(reservation);
+                                    break;
+                                case 2:
+                                    printUtil.coma(reservation);
+                                    break;
+                                case 3:
+                                    printUtil.jomusa(reservation);
+                                    break;
+                            }
+                        }
+                    }
+                }
+
             } else if (select == 3) {
                 System.out.print("프로그램을 종료합니다.");
                 break;
